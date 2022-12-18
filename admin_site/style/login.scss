@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/ROP/admin_site/media/back.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    @media(max-width: 580px){
+        padding: 15px;
+    }
+}
+.login-form{
+
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(1,0,10,1) 0%, rgba(74,71,148,1) 36%, rgba(105,105,122,1) 80%);
+    border-radius: 10px;
+    form {
+
+        display: grid;
+        height: 600px;
+        max-width: 500px;
+        justify-items: center;
+        align-items: center;
+        .logo {
+            img {
+                height: 120px;
+                opacity: 0.7;
+            }
+
+        }
+        .login-name {
+            font-size: 50px;
+            margin-top: -50px;
+        }
+        .username {
+            
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 10px;
+            width: 70%;
+
+            .fa-user {
+                font-size: 50px;
+            }
+            ::placeholder {
+                color: white;
+                font-size: 40px;
+                @media(max-width: 400px){
+                    font-size: 30px;
+                }
+                @media(max-width: 340px){
+                    font-size: 25px;
+                }
+            }
+        }
+        .wrapper {
+           display: grid;   
+           grid-template-columns: 1fr; 
+            
+        }
+        .password {
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 10px;
+            width: 70%;
+            .fa-lock {
+                font-size: 50px;
+            }
+            ::placeholder {
+                color: white;
+                font-size: 40px;
+                @media(max-width: 400px){
+                    font-size: 30px;
+                }
+                @media(max-width: 340px){
+                    font-size: 25px;
+                }
+            }
+        }
+
+        input {
+            background: transparent;
+            color: white;
+            border: none;
+            height: 50px;
+            width: 100%;
+            font-size: 40px;
+
+            @media(max-width: 400px){
+                font-size: 30px;
+
+            }
+            
+            &:focus::placeholder {
+                color: transparent;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        
+        .focus-input {
+            height: 3px;
+            background: black;
+            border-radius: 3px;
+            width: 100%;
+            transition: 1s;
+            
+        }
+        .login {
+            button {
+                cursor: pointer;
+                border: none;
+                text-decoration: none;
+                background: white;
+                color: rgb(33, 33, 33);
+                width: 120px;
+                height: 50px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                border-radius: 30px;
+                transition: color .5s, background 1s;
+
+                &:hover {
+                    background: rgba(20, 75, 119, 0.471);
+                    
+                    color: white;
+                }
+            }
+            
+        }
+    }
+}
+

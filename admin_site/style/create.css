@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-image: url("/ROP/admin_site/media/Perfumes.png");
+  padding: 30px 50px 0 50px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back-2 {
+  background: #3c1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.back-2 h1 a i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.back-2 h1 a i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.back-2 .tab {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+@media (max-width: 630px) {
+  .back-2 .tab {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    gap: 10px;
+  }
+}
+
+.back-2 .tab .part-1 {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.back-2 .tab .part-1 label {
+  margin: 0 0 10px 0;
+}
+
+.back-2 .tab .part-2 {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+.back-2 .tab .part-2 label {
+  margin: 0 0 10px 0;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: red;
+}
+
+.form-control:-ms-input-placeholder {
+  color: red;
+}
+
+.form-control::-ms-input-placeholder {
+  color: red;
+}
+
+.form-control::placeholder {
+  color: red;
+}
+
+option {
+  color: black;
+}
+
+.save-file {
+  background: white;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+}
+
+.save-file i {
+  color: black;
+}
+
+.save-file:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=create.css.map */

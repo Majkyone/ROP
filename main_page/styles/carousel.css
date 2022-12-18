@@ -1,0 +1,70 @@
+#carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: black;
+}
+
+#carousel .box {
+  position: relative;
+  width: 60rem;
+  height: 40rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: animate 20s linear infinite;
+          animation: animate 20s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: perspective(100rem) rotateY(0deg);
+            transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(100rem) rotateY(360deg);
+            transform: perspective(100rem) rotateY(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: perspective(100rem) rotateY(0deg);
+            transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(100rem) rotateY(360deg);
+            transform: perspective(100rem) rotateY(360deg);
+  }
+}
+
+#carousel .box span {
+  border: 0.1rem solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(calc(var(--i) * 120deg)) translateZ(40rem);
+          transform: rotateY(calc(var(--i) * 120deg)) translateZ(40rem);
+  -webkit-box-reflect: below 0.5rem linear-gradient(transparent, transparent, #0004);
+}
+
+#carousel .box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=carousel.css.map */

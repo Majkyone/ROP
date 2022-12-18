@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    
+    background: #F2E9E2;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    .search-panel {
+        background: red;
+        height: 100vh;
+    }
+    
+    .products {
+        display: grid;
+        background: yellow;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+        @media(max-width: 1500px){
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .product {
+            display: grid;
+            width: 100%;
+            background: white;
+            justify-items: center;
+            align-items: center;
+            img {
+                padding-top: 20px;
+                width: 100%;
+            }
+            .name {
+                margin-top: 0px;
+                font-size: 3rem;
+            }
+            .description {
+                font-size: 2rem;
+            }
+            .price {
+                font-size: 3rem;
+            }
+        }
+    }
+}

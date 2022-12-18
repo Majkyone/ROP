@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-image: url("/ROP/admin_site/media/Perfumes.png");
+    padding: 30px 50px 0 50px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back-2{
+    background: #3c1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    h1 {
+        a {
+            i {
+                transition: 0.5s;
+                &:hover {
+                    
+                    transform: scale(1.2);
+                }
+            }
+            
+
+        }
+    }
+    .tab {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media(max-width: 630px){
+            grid-template-columns: none;
+            gap: 10px;
+        }
+        gap: 50px;
+        .part-1 {
+            display: grid;
+            gap: 10px;
+            width: 100%;
+            label {
+                margin: 0 0 10px 0;
+            }
+        }
+        .part-2 {
+            display: grid;
+            gap: 10px;
+            label {
+                margin: 0 0 10px 0;
+            }
+        }
+        
+    }
+}
+
+.btn {
+    margin-top: 10px;
+}
+.form-control::placeholder {
+    color: red;
+}
+
+option {
+    color: black;
+}
+.save-file {
+    i {
+        color: black;
+    }
+    background: white;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    &:hover{
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+img {
+  height: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/ROP/admin_site/media/wp2508260.jpg");
+  padding: 30px 50px 0 50px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.main-nav h1 {
+  color: white;
+  font-family: 'Satisfy';
+  font-size: 7vh;
+}
+
+.main-nav .right {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main-nav .right .nav-i {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 775px) {
+  .main-nav .right .nav-i {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    gap: 20px;
+  }
+}
+
+.main-nav .right .nav-i .orders {
+  text-align: center;
+  color: rgba(235, 165, 68, 0.93);
+  border-color: rgba(235, 165, 68, 0.93);
+}
+
+.main-nav .right .nav-i .orders:hover {
+  background: rgba(235, 165, 68, 0.93);
+  color: white;
+}
+
+.main-nav .right .nav-i form {
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .main-nav {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+  .main-nav .right {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.table {
+  background: white;
+  border-radius: 10px;
+}
+
+.btn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.table {
+  overflow: hidden;
+}
+
+@media (max-width: 680px) {
+  thead {
+    display: none;
+  }
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+  }
+  tr {
+    margin-bottom: 15px;
+  }
+  td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=admin.css.map */

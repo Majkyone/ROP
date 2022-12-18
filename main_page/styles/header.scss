@@ -1,0 +1,94 @@
+@import "./defs.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    .logo {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    .button {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+
+        .bar {
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+    }
+
+    .navbar-links {
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+            
+            &:hover {
+                background-color: #5550;
+            }                
+                a {
+                   text-decoration: none;
+                   color: white;
+                   padding: 1rem;
+                   display: block; 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        .button {
+            display: flex;
+            
+        }
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 42px;
+        background-color: #333;
+        ul {
+            width: 100%;
+            flex-direction: column;
+
+            li {
+                text-align: center;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+                a {
+                   padding: 0.5rem 1rem; 
+                }
+            }
+        }
+        &.active {
+            display: flex;
+        }
+    }
+}
