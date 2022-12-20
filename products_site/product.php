@@ -80,14 +80,9 @@
                             </button>
                         </a>
                     </div>
-                    <style>
-                        .image<?php echo $count?> {
-                            
-                            background-image: url("/ROP/admin_site/<?php echo $product['image']?>");
-                            
-                        }
-                        </style>
-                    <div class="image<?php echo $count++?> image-content"></div>
+                    <div class="image<?php echo $count++?> image-content">
+                    <img src="" alt="">
+                    </div>
                     <div class="full-content">
                         <div class="top-content">
                             <h2 class="brand">
