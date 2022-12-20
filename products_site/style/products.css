@@ -35,7 +35,7 @@ body .card-container {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   width: 100%;
-  height: 600px;
+  height: 620px;
   margin: 30px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -67,6 +67,13 @@ body .card-container .cart .button {
   height: 50px;
   margin-top: 16px;
   max-width: 200px;
+}
+
+body .card-container .cart .button .button-pd {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 body .card-container .cart .button .button-pd .text {

@@ -142,7 +142,7 @@
                             <a href="/ROP/products_site/product.php?id=<?php echo $product['id_product']?>">
                                 <button class="button">
                                     <div class="button-pd">
-                                    <p>Otvoriť produkt</p>
+                                    <p class="text">Otvoriť produkt</p>
                                 </div>
                                 </button>
                             </a>

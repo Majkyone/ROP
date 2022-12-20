@@ -35,6 +35,13 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .wrapper .products {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .wrapper .products .product {
   display: -ms-grid;
   display: grid;
