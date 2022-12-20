@@ -82,6 +82,7 @@
                     </div>
                     <div class="image<?php echo $count++?> image-content">
                         <img src="<?php echo $product['image']?>" alt="">
+                        cau
                     </div>
                     <div class="full-content">
                         <div class="top-content">
