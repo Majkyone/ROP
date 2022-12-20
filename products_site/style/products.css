@@ -69,7 +69,7 @@ body .card-container .cart .button {
   max-width: 200px;
 }
 
-body .card-container .cart .button .button-pd p {
+body .card-container .cart .button .button-pd .text {
   margin-bottom: 0;
   font-size: 1.2em;
   color: var(--white);
@@ -89,13 +89,13 @@ body .card-container .image-content {
 body .card-container .full-content {
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  margin: 40px 30px;
+  margin: 30px 20px;
   max-width: 250px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
-body .card-container .full-content .top-content h2 {
+body .card-container .full-content .top-content .brand {
   color: var(--mediumlightgrey);
   font-size: 1.35em;
   font-weight: 600;
@@ -104,7 +104,7 @@ body .card-container .full-content .top-content h2 {
   margin-bottom: 20px;
 }
 
-body .card-container .full-content .top-content h1 {
+body .card-container .full-content .top-content .title {
   color: var(--bluishblack);
   font-size: 2.5em;
   font-weight: 800;
@@ -114,7 +114,7 @@ body .card-container .full-content .top-content h1 {
   margin-bottom: 10px;
 }
 
-body .card-container .full-content .paragraph p {
+body .card-container .full-content .paragraph .text {
   color: var(--darkgrey);
   font-size: 1em;
   font-weight: 500;
@@ -140,14 +140,14 @@ body .card-container .full-content .amount {
   margin-bottom: 8px;
 }
 
-body .card-container .full-content .amount .correct-val p {
+body .card-container .full-content .amount .correct-val .text {
   color: var(--darkgreen);
   font-size: 2.5em;
   font-weight: 800;
   font-family: 'Fraunces', serif;
 }
 
-body .card-container .full-content .amount .strikethrough-val p {
+body .card-container .full-content .amount .strikethrough-val .text {
   color: var(--mediumlightgrey);
   text-decoration: line-through;
 }

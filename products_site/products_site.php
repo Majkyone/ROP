@@ -157,21 +157,21 @@
                         <div class="image<?php echo $count++?> image-content"></div>
                         <div class="full-content">
                             <div class="top-content">
-                                <h2>
+                                <h2 class="brand">
                                     <?php echo $product['brand']?>
                                 </h2>
-                                <h1>
+                                <h1 class="title">
                                 <?php echo $product['title']?>
                                 </h1>
                             </div>
                             <div class="paragraph">
-                                <p>
+                                <p class="text">
                                     <?php echo $product['caption']?>
                                 </p>
                             </div>
                             <div class="amount">
                                 <div class="correct-val">
-                                    <p>
+                                    <p class="text">
                                         <?php echo number_format($product['price'],2,","," "), ' €'?>
                                     </p>
                                 </div>

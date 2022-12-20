@@ -59,7 +59,7 @@ body {
                 max-width: 200px;
     
                 .button-pd {
-                    p {
+                    .text {
                         margin-bottom: 0;
                         font-size: 1.2em;
                         color: var(--white);
@@ -85,7 +85,7 @@ body {
             max-width: 250px;
             backface-visibility: hidden;
             .top-content{
-                h2 {
+                .brand {
                     color: var(--mediumlightgrey);
                     font-size: 1.35em;
                     font-weight: 600;
@@ -93,7 +93,7 @@ body {
                     letter-spacing: 5px;
                     margin-bottom: 20px;
                 }
-                h1 {
+                .title {
                     color: var(--bluishblack);
                     font-size: 2.5em;
                     font-weight: 800;
@@ -105,7 +105,7 @@ body {
                     
             } 
             .paragraph {
-                p {
+                .text {
                     color: var(--darkgrey);
                     font-size: 1em;
                     font-weight: 500;
@@ -125,7 +125,7 @@ body {
                 margin-top: 20px;
                 margin-bottom: 8px;
                 .correct-val {
-                    p{
+                    .text{
                         color: var(--darkgreen);
                         font-size: 2.5em;
                         font-weight: 800;
@@ -133,7 +133,7 @@ body {
                     }   
                 }
                 .strikethrough-val{
-                    p {
+                    .text {
                         color: var(--mediumlightgrey);
                         text-decoration: line-through;
                     }
