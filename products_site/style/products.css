@@ -88,6 +88,10 @@ body .card-container .image-content {
   transition: .5s ease;
 }
 
+body .card-container .image-content img {
+  background: wheat;
+}
+
 body .card-container .full-content {
   -webkit-transition: .5s ease;
   transition: .5s ease;
